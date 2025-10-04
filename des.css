@@ -1,0 +1,379 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.main{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.home{
+    margin-left: 50vw;
+}
+.home1{
+    @media(min-width: 1200px) {
+        margin-left: 50vw;
+        display: flex;
+        gap:1rem ;
+        justify-content: end;
+    }
+}
+.shop2{
+    width: 100%;
+    height: 48vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.one{
+    width: 100%;
+    height: auto;
+    background-image: url(image/pedestrians-400811_640.jpg);background-size: cover;
+
+}
+
+.two{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+.three{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+#blog{
+    padding: 50px 150px 0 150px;
+}
+.blogbox{
+display: flex;
+align-items: center;
+width: 100%;
+position: relative;
+padding-bottom: 90px;
+}
+.blogimg{
+width: 50%;
+margin-right: 40px;
+}
+.blogimg img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+}
+
+
+.blogdetials{
+ width: 50%;
+ 
+} 
+.blogdetials a{
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+
+} 
+.blogdetials a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 4px;
+    right:-60px ;
+
+} 
+.blogdetials a:hover{
+color: rgb(11, 126, 119);
+}
+.blogbox h1{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: bolder;
+  color: gray;
+ }
+ .btn5{
+    height: 40px;
+    width: 90px;
+    padding: 5px;
+    background-color:rgb(11, 126, 119);
+    color: white;
+    border: none;
+}
+.foot{
+    background-color:hsl(217, 89%, 14%);
+   height: 35vh;
+   position: relative;
+}
+ /* .blogimg{
+    @media(min-width: 992px){
+        width: 50%;
+    }
+}
+.blogimg{
+    @media(min-width: 768px){
+        width: 50%;
+    }
+}
+.blogimg{
+    @media(min-width:576px){
+        width: 50%;
+    }
+}
+
+.blogimg{
+    @media(min-width: 1200px){
+        width: 50%;
+    }
+  } 
+
+
+  .blogdetials{
+    @media(min-width: 992px){
+        width: 50%;
+    }
+}
+.blogdetials{
+    @media(min-width: 768px){
+        width: 50%;
+    }
+}
+.blogdetials{
+    @media(min-width:576px){
+        width: 50%;
+    }
+}
+
+.blogdetials{
+    @media(min-width: 1200px){
+        width: 50%;
+    }
+  }  */
+
+    @media (max-width: 799px){
+        .blogbox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            position: relative;
+        }
+        #blog {
+            padding: 100px 20px 0 20px;
+        }
+        .blogimg {
+            width: 100%;
+            margin-right: 0px;
+        }
+        .blogdetials {
+            width: 100%;
+        }
+    }
+    .ach a{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+    .ach a:hover{
+        color: aquamarine;
+
+    }
+    /* .table{
+        margin: 80px auto;
+
+    }
+    .cardinfo{
+     display: flex;
+     flex-wrap: wrap;
+    }
+    th{
+        padding: 5px;
+        font-weight: normal;
+    }
+    td{
+        padding: 10px 5px;
+    }
+    td input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+    }
+    td button{
+        background-color: red;
+    }
+    td img{
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+
+    } */
+    .cart-column {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        margin-right: 1.5em;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .cart-row {
+        display: flex;
+    }
+    
+    .cart-item {
+        width: 45%;
+    }
+    
+    .cart-price {
+        width: 20%;
+        font-size: 1.2em;
+        color: #333;
+    }
+    
+    .cart-quantity {
+        width: 35%;
+    }
+    
+    .cart-item-title {
+        color: #333;
+        margin-left: .5em;
+        font-size: 1.2em;
+    }
+    
+    .cart-item-image {
+        width: 75px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .btn-danger {
+        color: white;
+        background-color: #EB5757;
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
+    }
+    
+    .btn-danger:hover {
+        background-color: #CC4C4C;
+    }
+    
+    .cart-quantity-input {
+        height: 34px;
+        width: 50px;
+        border-radius: 5px;
+        border: 1px solid #56CCF2;
+        background-color: #eee;
+        color: #333;
+        padding: 0;
+        text-align: center;
+        font-size: 1.2em;
+        margin-right: 25px;
+    }
+    
+    .cart-row:last-child {
+        border-bottom: 1px solid black;
+    }
+    
+    .cart-row:last-child .cart-column {
+        border: none;
+    }
+    
+    .cart-total {
+        text-align: end;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    .cart-total-title {
+        font-weight: bold;
+        font-size: 1.5em;
+        color: black;
+        margin-right: 20px;
+    }
+    
+    .cart-total-price {
+        color: #333;
+        font-size: 1.1em;
+    }
+    
+    .btn-purchase {
+        display: block;
+        margin: 40px auto 80px auto;
+        font-size: 1.75em;
+    }
+    /* .new33{
+        display: flex;
+        background-color: yellow;
+        justify-content: space-between;
+
+    }
+    .new34{
+        display: flex;
+
+    } */
+    .new34{
+   display: flex;
+   /* padding-right: 20px;
+   padding-left: 20px; */
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 3rem;
+
+}
+.img3{
+  height: 100%;
+ justify-content: space-around;
+}
+
+
+.img3{
+    @media(min-width: 992px){
+        width:100%;
+    }
+}
+.img3{
+    @media(min-width: 768px){
+        width:100%;
+    }
+}
+.img3{
+    @media(min-width:576px){
+        width:100%;
+    }
+}
+
+.img3{
+    @media(min-width: 1200px){
+        width: 20rem;
+    }
+  }
+  .btn5{
+    background-color: blue;
+  }
+  :hover.red1{
+   background-color: lightgreen;
+   border-radius: 0%;
+
+    
+  }
+  .red2 {
+    display: flex;
+    gap: 70px;
+  
+  }
+ 
+ 
